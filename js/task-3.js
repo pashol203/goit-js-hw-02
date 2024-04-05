@@ -1,7 +1,8 @@
-function checkForSpam(message){
-const lowerCaseMessage = message.toLowerCase();
-return lowerCaseMessage.includes(`span`) || lowerCaseMessage.includes(`sale`);
+function checkForSpam(message) {
+  const lowerCaseMessage = message.toLowerCase();
+  return lowerCaseMessage.includes(`spam`) || lowerCaseMessage.includes(`sale`); // Исправлена опечатка в слове "spam"
 }
+
 console.log(checkForSpam("Последняя технология новостей")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
 console.log(checkForSpam("Get best sale offers now!")); // true
